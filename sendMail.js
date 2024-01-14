@@ -2,9 +2,7 @@ import mailer from './configures/nodemailer.js'
 import dotenv from 'dotenv'
 dotenv.config()
 
-console.log(process.env)
 const sendMail = (email,otp)=>{
-    console.log("otp",otp);
     const mailDetails = {
         from: process.env.SENDER_MAIL,
         to: email,
