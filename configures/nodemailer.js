@@ -7,7 +7,7 @@ let mailTransporter = nodemailer.createTransport({
     port: 587,
     secure:true,
     logger:true,
-    debug:true,
+    debug:false,
     secureConnection:true,
     auth: {
         user: process.env.SENDER_MAIL,
